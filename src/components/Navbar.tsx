@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Zap, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import brandingzentraleLogo from "@/assets/brandingzentrale-logo.png";
 
 const navLinks = [
   { href: "#leistungen", label: "Leistungen" },
@@ -36,13 +37,12 @@ const Navbar = () => {
         <div className="container max-w-6xl mx-auto px-6 md:px-12">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <a href="#" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center transition-transform group-hover:scale-110">
-                <Zap className="w-5 h-5 text-accent-foreground" />
-              </div>
-              <span className="font-heading text-xl text-primary-foreground font-bold hidden sm:block">
-                Brandingzentrale
-              </span>
+            <a href="#" className="flex items-center group transition-transform hover:scale-105">
+              <img 
+                src={brandingzentraleLogo} 
+                alt="Brandingzentrale - Website als Cash-Machine" 
+                className="h-12 sm:h-14 md:h-16 w-auto drop-shadow-lg"
+              />
             </a>
 
             {/* Desktop Navigation */}
