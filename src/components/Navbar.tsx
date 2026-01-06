@@ -30,7 +30,7 @@ const Navbar = () => {
         transition={{ duration: 0.6 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled 
-            ? "bg-primary/95 backdrop-blur-md shadow-lg" 
+            ? "bg-background/95 backdrop-blur-md shadow-lg border-b border-border" 
             : "bg-transparent"
         }`}
       >
@@ -51,7 +51,7 @@ const Navbar = () => {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-primary-foreground/70 hover:text-accent transition-colors text-sm font-medium"
+                  className="text-foreground/70 hover:text-accent transition-colors text-sm font-medium"
                 >
                   {link.label}
                 </a>
@@ -67,7 +67,7 @@ const Navbar = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden w-10 h-10 flex items-center justify-center text-primary-foreground"
+              className="md:hidden w-10 h-10 flex items-center justify-center text-foreground"
             >
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -83,7 +83,7 @@ const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-primary pt-24 px-6 md:hidden"
+            className="fixed inset-0 z-40 bg-background pt-24 px-6 md:hidden"
           >
             <div className="flex flex-col gap-6">
               {navLinks.map((link) => (
@@ -91,7 +91,7 @@ const Navbar = () => {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-2xl font-heading text-primary-foreground hover:text-accent transition-colors"
+                  className="text-2xl font-heading text-foreground hover:text-accent transition-colors"
                 >
                   {link.label}
                 </a>
