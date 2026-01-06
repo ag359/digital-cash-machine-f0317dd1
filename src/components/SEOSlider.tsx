@@ -6,7 +6,7 @@ const SEOSlider = () => {
   const [sliderPosition, setSliderPosition] = useState(50);
 
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-primary">
       <div className="container max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -16,10 +16,10 @@ const SEOSlider = () => {
           className="text-center mb-16"
         >
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">SEO-Power</span>
-          <h2 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">
+          <h2 className="font-heading text-3xl md:text-5xl text-primary-foreground mt-3 mb-4">
             Sichtbar statt unsichtbar.
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-primary-foreground/70 text-lg max-w-2xl mx-auto">
             Der Unterschied zwischen einer Standard-Website und deiner digitalen Cash-Machine.
           </p>
         </motion.div>

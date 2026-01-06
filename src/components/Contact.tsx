@@ -3,7 +3,7 @@ import { Calendar, ArrowRight, Mail, Phone } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="kontakt" className="section-padding bg-background">
+    <section id="kontakt" className="section-padding bg-primary">
       <div className="container max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -13,10 +13,10 @@ const Contact = () => {
           className="text-center mb-12"
         >
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">Jetzt starten</span>
-          <h2 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">
+          <h2 className="font-heading text-3xl md:text-5xl text-primary-foreground mt-3 mb-4">
             Bereit für deine Cash-Machine?
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-primary-foreground/70 text-lg max-w-2xl mx-auto">
             Wähle deinen Termin für ein kostenloses Erstgespräch. Unverbindlich, ehrlich, direkt.
           </p>
         </motion.div>
@@ -26,7 +26,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="card-premium border border-border"
+          className="bg-navy-light/50 backdrop-blur-sm border border-primary-foreground/10 rounded-2xl p-8"
         >
           {/* Booking Widget Placeholder */}
           <div className="text-center py-12">
@@ -34,11 +34,11 @@ const Contact = () => {
               <Calendar className="w-10 h-10 text-accent" />
             </div>
             
-            <h3 className="font-heading text-2xl text-foreground mb-4">
+            <h3 className="font-heading text-2xl text-primary-foreground mb-4">
               Termin buchen
             </h3>
             
-            <p className="text-muted-foreground mb-8 max-w-md mx-auto">
+            <p className="text-primary-foreground/70 mb-8 max-w-md mx-auto">
               Klicke auf den Button, um direkt einen freien Termin in unserem Kalender zu wählen.
             </p>
 
@@ -50,19 +50,19 @@ const Contact = () => {
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </a>
 
-            <div className="mt-10 pt-8 border-t border-border">
-              <p className="text-sm text-muted-foreground mb-4">Oder kontaktiere uns direkt:</p>
+            <div className="mt-10 pt-8 border-t border-primary-foreground/10">
+              <p className="text-sm text-primary-foreground/60 mb-4">Oder kontaktiere uns direkt:</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
                   href="mailto:hallo@brandingzentrale.de" 
-                  className="inline-flex items-center gap-2 text-foreground hover:text-accent transition-colors"
+                  className="inline-flex items-center gap-2 text-primary-foreground hover:text-accent transition-colors"
                 >
                   <Mail className="w-4 h-4" />
                   <span>hallo@brandingzentrale.de</span>
                 </a>
                 <a 
                   href="tel:+4912345678900" 
-                  className="inline-flex items-center gap-2 text-foreground hover:text-accent transition-colors"
+                  className="inline-flex items-center gap-2 text-primary-foreground hover:text-accent transition-colors"
                 >
                   <Phone className="w-4 h-4" />
                   <span>+49 123 456 789 00</span>

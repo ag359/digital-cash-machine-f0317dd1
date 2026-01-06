@@ -24,7 +24,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="section-padding bg-primary">
+    <section className="section-padding bg-background">
       <div className="container max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -34,10 +34,10 @@ const Testimonials = () => {
           className="text-center mb-16"
         >
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">Kundenstimmen</span>
-          <h2 className="font-heading text-3xl md:text-5xl text-primary-foreground mt-3 mb-4">
+          <h2 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">
             Was unsere Partner sagen.
           </h2>
-          <p className="text-primary-foreground/70 text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Echte Ergebnisse, echte Stimmen. Überzeuge dich selbst.
           </p>
         </motion.div>
@@ -52,7 +52,7 @@ const Testimonials = () => {
               transition={{ duration: 0.6, delay: index * 0.15 }}
               className="group"
             >
-              <div className="h-full bg-navy-light/50 backdrop-blur-sm border border-primary-foreground/10 rounded-2xl p-8 transition-all duration-300 hover:border-accent/30">
+              <div className="h-full bg-card border border-border rounded-2xl p-8 transition-all duration-300 hover:border-accent/30 hover:shadow-lg">
                 {/* Quote Icon */}
                 <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-6">
                   <Quote className="w-6 h-6 text-accent" />
@@ -66,16 +66,16 @@ const Testimonials = () => {
                 </div>
 
                 {/* Quote */}
-                <p className="text-primary-foreground/80 leading-relaxed mb-6 italic">
+                <p className="text-muted-foreground leading-relaxed mb-6 italic">
                   "{testimonial.quote}"
                 </p>
 
                 {/* Author */}
-                <div className="pt-6 border-t border-primary-foreground/10">
-                  <p className="font-heading text-primary-foreground font-semibold">
+                <div className="pt-6 border-t border-border">
+                  <p className="font-heading text-foreground font-semibold">
                     {testimonial.name}
                   </p>
-                  <p className="text-sm text-primary-foreground/50">
+                  <p className="text-sm text-muted-foreground">
                     {testimonial.role}
                   </p>
                 </div>

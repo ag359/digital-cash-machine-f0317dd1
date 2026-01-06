@@ -3,9 +3,9 @@ import { ArrowRight, Zap } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-primary overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-background overflow-hidden">
       {/* Subtle grid pattern */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-10">
         <div 
           className="absolute inset-0" 
           style={{
@@ -16,7 +16,7 @@ const Hero = () => {
       </div>
 
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-primary via-primary to-navy-light opacity-90" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-muted opacity-90" />
 
       <div className="container relative z-10 px-6 md:px-12 py-20">
         <motion.div
@@ -41,7 +41,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="font-heading text-4xl md:text-5xl lg:text-7xl text-primary-foreground leading-tight mb-6"
+            className="font-heading text-4xl md:text-5xl lg:text-7xl text-foreground leading-tight mb-6"
           >
             Deine Vision, mein Code.{" "}
             <span className="text-gradient-gold">Gemeinsam bauen wir deine digitale Cash-Machine.</span>
@@ -52,7 +52,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-lg md:text-xl text-primary-foreground/70 max-w-3xl mx-auto mb-10 leading-relaxed font-body"
+            className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed font-body"
           >
             Webseiten für lokale Dienstleister – radikal auf Kundengewinnung getrimmt, 
             von Anfang an 1A suchmaschinenoptimiert durch SEO-Spezialist Sergej.
@@ -78,7 +78,7 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 0.8 }}
-            className="mt-16 flex flex-wrap justify-center gap-8 text-primary-foreground/50 text-sm"
+            className="mt-16 flex flex-wrap justify-center gap-8 text-muted-foreground text-sm"
           >
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-accent" />
@@ -103,7 +103,7 @@ const Hero = () => {
         transition={{ delay: 1.2, duration: 0.8 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2"
       >
-        <div className="w-6 h-10 rounded-full border-2 border-primary-foreground/30 flex justify-center pt-2">
+        <div className="w-6 h-10 rounded-full border-2 border-foreground/30 flex justify-center pt-2">
           <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}

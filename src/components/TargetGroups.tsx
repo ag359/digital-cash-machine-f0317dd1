@@ -12,7 +12,7 @@ const industries = [
 
 const TargetGroups = () => {
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-primary">
       <div className="container max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -22,10 +22,10 @@ const TargetGroups = () => {
           className="text-center mb-16"
         >
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">Branchen-Matrix</span>
-          <h2 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">
+          <h2 className="font-heading text-3xl md:text-5xl text-primary-foreground mt-3 mb-4">
             DIE Lösung für jeden lokalen Dienstleister.
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-primary-foreground/70 text-lg max-w-2xl mx-auto">
             Egal in welcher Branche du tätig bist – wir verstehen deine Zielgruppe und bauen die perfekte Website dafür.
           </p>
         </motion.div>
@@ -40,16 +40,16 @@ const TargetGroups = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group"
             >
-              <div className="card-premium h-full text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg cursor-pointer border border-transparent hover:border-accent/20">
+              <div className="bg-navy-light/50 backdrop-blur-sm border border-primary-foreground/10 rounded-2xl p-6 h-full text-center transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 cursor-pointer">
                 <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:bg-accent group-hover:scale-110">
                   <industry.icon className="w-7 h-7 text-accent transition-colors group-hover:text-accent-foreground" />
                 </div>
                 
-                <h3 className="font-heading text-lg text-foreground mb-2">
+                <h3 className="font-heading text-lg text-primary-foreground mb-2">
                   {industry.name}
                 </h3>
                 
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-primary-foreground/60">
                   {industry.description}
                 </p>
               </div>
@@ -62,7 +62,7 @@ const TargetGroups = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="text-center mt-12 text-muted-foreground"
+          className="text-center mt-12 text-primary-foreground/70"
         >
           Deine Branche nicht dabei? <span className="text-accent font-medium">Kein Problem – sprich uns einfach an!</span>
         </motion.p>
