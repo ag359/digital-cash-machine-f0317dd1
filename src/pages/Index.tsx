@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import SEOSlider from "@/components/SEOSlider";
 import ValueProposition from "@/components/ValueProposition";
+import Portfolio from "@/components/Portfolio";
 import TargetGroups from "@/components/TargetGroups";
 import Process from "@/components/Process";
 import AboutUs from "@/components/AboutUs";
@@ -18,6 +19,7 @@ const Index = () => {
         <SEOSlider />
       </div>
       <ValueProposition />
+      <Portfolio />
       <TargetGroups />
       <div id="prozess">
         <Process />
